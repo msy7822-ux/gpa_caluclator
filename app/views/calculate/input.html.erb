@@ -1,18 +1,23 @@
-<p>今期の履修した授業数と成績評価の種類を教えてください</p>
-<p>例：履修した授業数→９、成績評価の種類→「秀」「優」「良」「可」「不可」など</p>
+<div class="description">
+    <p>今期の履修した授業数と成績評価の種類を教えてください</p>
+    <p>例：履修した授業数→９、成績評価の種類→「秀」「優」「良」「可」「不可」など</p>
+</div>
 
 <% if flash[:notice] %>
     <p style="color: red;"><%= flash[:notice] %></p>
 <% end %>
 
-<%= form_tag('/calculate/actual_calc', method:"post") do  %>
-    <input type="number" name="classnum" placeholder="授業のコマ数を入力"><br>
-    <br>
-    <input class="gk s" type="text" name="s">
-    <input class="gk a" type="text" name="a">
-    <input class="gk b" type="text" name="b">
-    <input class="gk c" type="text" name="c">
-    <input class="gk d" type="text" name="d"><br>
-    <br>
-    <input type="submit" value="送信">
-<% end %>
+
+<div class="form">
+    <%= form_tag('/calculate/actual_calc', method:"post") do  %>
+        <input id="top" class="classnum" type="number" name="classnum" placeholder="授業のコマ数を入力"><br>
+        <br>
+        <input class="gk s" type="text" name="s" placeholder="例：秀">
+        <input class="gk a" type="text" name="a" placeholder="例：優">
+        <input class="gk b" type="text" name="b" placeholder="例：良">
+        <input class="gk c" type="text" name="c" placeholder="例：可">
+        <input class="gk d" type="text" name="d" placeholder="例：不可"><br>
+        <br>
+        <input class="submit" type="submit" value="送信">
+    <% end %>
+</div>

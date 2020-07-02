@@ -1,8 +1,9 @@
-<% if @result %>
-    <p>あなたの<%= @class_num.classnum %>科目のGPAは</p>
-    <p><%= @gpa %>です</p>
-<% end %>
+<div class="result">
+    <p class="res1">あなたの<%= @class_num.classnum %>科目のGPAは、、、、、、、、、</p>
+    <p class="res2"><span><%= @gpa %></span>です</p>
 
 <%= form_tag('/calculate/confirm', method:"post") do %>
-    <input type="submit" value="成績の確認を終了する">
+    <input class="submit" type="submit" value="成績の確認を終了する">
 <% end %>
+
+</div>

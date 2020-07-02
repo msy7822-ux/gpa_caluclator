@@ -1,15 +1,133 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+/*全要素のデフォルトの余白を削除*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.pages{
+    list-style: none;
+    background: rgba(76,212,137,0.7);
+    display: flex;
+    border-radius: 5px;
+}
+
+
+.all{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top_page{
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.calc_page{
+    margin-bottom: 16px
+}
+
+.pages a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*-------------------------------------------*/
+/*/ home/ top.html.erb*/
+
+.about_app {
+    text-align: center;
+}
+
+.about_app h1{
+    color: rgba(76,212,137,0.7);
+    margin-top: 15px;
+    font-size: 45px;
+}
+
+.about_app h1 span{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.about_app p{
+    color: rgba(76,212,137,0.8);
+    margin-bottom: 20px;
+}
+
+.about_app img{
+    width: 300px;
+    height: 300px;
+}
+
+/*--------------------------------------------------*/
+/*/ calculate/ input.html.erb */
+
+.description{
+    margin: 25px 70px;
+    padding: 20px 25px;
+    background: rgba(76,212,137,0.75);
+    border-radius: 5px;
+}
+
+.description p{
+    color: #fff;
+}
+
+
+.form{
+    margin-top: 20px;
+    background: rgba(76,212,137,0.75);
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.submit{
+    padding: 8px 12px;
+}
+
+.classnum, .gk{
+    display: block;
+    text-align: center;
+    margin: 5px auto;
+    padding: 20px 50px;
+    border-radius: 5px;
+    border: 2px solid rgba(76,212,137,0.75);
+}
+
+
+.submit{
+    margin-bottom: 10px;
+}
+
+/*---------------------------------------*/
+
+/*.nothing{*/
+/*    height: 10px;*/
+/*}*/
+
+.form #top{
+    margin-top: 10px;  
+}
+
+
+.result{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
+    background: rgba(76,212,137,0.75);
+    width: 50%;
+}
+
+.res1, .res2{
+    color: #fff;
+}
+
+.res2 span{
+    font-size: 50px;
+    color: rgba(242,73,107,0.9);
+    font-weight: bold;
+}

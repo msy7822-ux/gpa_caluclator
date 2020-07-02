@@ -12,6 +12,24 @@
   </head>
 
   <body>
+    <header>
+      
+      <ul class="pages">
+        
+        <div class="all">
+          <li class="top_page">
+            <%= link_to('トップページ', '/') %>
+          </li>
+          
+          <li class="calc_page">
+            <%= link_to('GPA計算ページ', '/calculate/input') %>
+          </li>
+        </div>
+        
+      </ul>
+      
+    </header>
+    
     <%= yield %>
   </body>
 </html>
