@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  s: 1
+  a: 1
+  b: 1
+  c: 1
+  d: 1
+
+two:
+  s: 1
+  a: 1
+  b: 1
+  c: 1
+  d: 1

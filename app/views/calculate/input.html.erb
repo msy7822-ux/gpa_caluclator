@@ -1,0 +1,18 @@
+<p>今期の履修した授業数と成績評価の種類を教えてください</p>
+<p>例：履修した授業数→９、成績評価の種類→「秀」「優」「良」「可」「不可」など</p>
+
+<% if flash[:notice] %>
+    <p style="color: red;"><%= flash[:notice] %></p>
+<% end %>
+
+<%= form_tag('/calculate/actual_calc', method:"post") do  %>
+    <input type="number" name="classnum" placeholder="授業のコマ数を入力"><br>
+    <br>
+    <input class="gk s" type="text" name="s">
+    <input class="gk a" type="text" name="a">
+    <input class="gk b" type="text" name="b">
+    <input class="gk c" type="text" name="c">
+    <input class="gk d" type="text" name="d"><br>
+    <br>
+    <input type="submit" value="送信">
+<% end %>

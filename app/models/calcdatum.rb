@@ -1,0 +1,2 @@
+class Calcdatum < ApplicationRecord
+end

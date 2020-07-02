@@ -1,0 +1,2 @@
+class Seccalc < ApplicationRecord
+end

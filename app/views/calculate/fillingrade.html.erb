@@ -1,0 +1,17 @@
+<!--@classnumできちんと履修している授業数の表示が成功した。-->
+<!--最後にテーブルの中見を削除するのを忘れない様に-->
+
+<% if flash[:notice] %>
+    <p style="color: red;"><%= flash[:notice] %></p>
+<% end %>
+
+<%= form_tag('/calculate/fillindo', method:"post") do %>
+
+    <input type="text" name="s" placeholder="<%= @gradekind[0] %>の数を入力してください">
+    <input type="text" name="a" placeholder="<%= @gradekind[1] %>の数を入力してください">
+    <input type="text" name="b" placeholder="<%= @gradekind[2] %>の数を入力してください">
+    <input type="text" name="c" placeholder="<%= @gradekind[3] %>の数を入力してください">
+    <input type="text" name="d" placeholder="<%= @gradekind[4] %>の数を入力してください">
+    
+    <input type="submit" value="送信">
+<% end %>
